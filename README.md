@@ -1,2 +1,0 @@
-# frontcp
-Ecc Media project
