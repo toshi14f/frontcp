@@ -1,18 +1,19 @@
 // const buttons = document.getElementsByClassName('buttons');
+new ClipboardJS('.btn');
 const overlay = document.querySelectorAll(".overlay");
 
-document.querySelectorAll('.buttons').forEach(item => {
+document.querySelectorAll('.tab__btn--open').forEach(item => {
     item.addEventListener('click', event => {
       //handle click
       console.log(item.parentElement.children[0]);
-      item.parentElement.children[0].style.display = "block";
+      item.parentElement.children[0].style.display = "grid";
     })
   })
 
   document.querySelectorAll('.close-btn').forEach(item => {
     item.addEventListener('click', event => {
       //handle click
-      console.log(item.parentElement.style.display = "none");
+      item.parentElement.parentElement.parentElement.style.display = "none";
     })
   });
 
@@ -29,3 +30,7 @@ document.querySelectorAll('.buttons').forEach(item => {
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
   }
+
+
+
+// buttons

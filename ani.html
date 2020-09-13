@@ -1,1 +1,332 @@
-<!DOCTYPE html><html><head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#"><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="ie=edge"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1"><meta name="format-detection" content="telephone=no"><meta name="keywords" content="ecc,ECC,ecc comp.,..."><meta name="description" content="ここに説明文を設定"><title>Color Generator</title><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@twitteraccount"><meta property="og:site_name" content="サイト名"><meta property="og:title" content="サイトタイトル"><meta property="og:description" content="サイト説明文"><meta property="og:url" content="https://www.hogehoge.com"><meta property="og:image" content="https://www.hogehoge.com./hoge.jpg"><meta property="og:image:type" content="image/jpeg"><meta property="og:image:width" content="600"><meta property="og:image:height" content="400"><meta property="og:type" content="website"><link rel="stylesheet" type="text/css" href="styles/main.css"></head><body><header><div class="copied"><p>The code was copied to your clipboard</p></div><div class="logo"><img src="img/logo/logo.svg" class="logo__img" alt="logo" width="40px" height="37px"><p class="logo__title">Frontcp</p><p class="logo__tagline">Background Generator</p></div><nav class="header__menu menu"><button class="menu__button" type="button" aria-expanded="false" aria-controls="menu__list"><svg class="menu__icon" aria-hidden="true" width="32" height="32"><use class="menu__icon-menu" href="img/sprite.svg#menu"></use><use class="menu__icon-cross" href="img/sprite.svg#cross"></use></svg></button><ul class="menu__list" id="menu__list"><li class="menu__item"><a class="menu__link menu__link--current">Background</a></li><li class="menu__item"><a class="menu__link menu__link--inactive">Navigation</a></li><li class="menu__item"><a class="menu__link menu__link--inactive">Navigation</a></li></ul></nav></header><main class="ani__main"><div class="button"><h2 class="tag__title">Button</h2><div class="button"><div class="overlay"><button class="close-btn">close</button><div class="tab"><button class="tablinks" onclick="openCity(event, 'London')">London</button> <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button> <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button></div><div id="London" class="tabcontent"><h3>HTML</h3><p>London is the capital city of England.</p></div><div id="Paris" class="tabcontent"><h3>CSS</h3><p>Paris is the capital of France.</p></div><div id="Tokyo" class="tabcontent"><h3>JS</h3><p>Tokyo is the capital of Japan.</p></div></div><button class="buttons b1">button1</button></div><div class="button"><div class="overlay"><div class="text">BUTTON 2</div></div><button class="buttons b2">button2</button></div></div><div class="image"><div class="box1"><img src="img/img1.png" alt="" class="img1"></div><div class="box2"><img src="img/img1.png" alt="" class="img2"></div><div class="box3"><img src="img/img1.png" alt="" class="img3"></div><div class="box4"><img src="img/img1.png" alt="" class="img4"></div><div class="box5"><img src="img/img1.png" alt="" class="img5"><div class="mask"><div class="caption">hoverしました</div></div></div><div class="box6"><img src="img/img1.png" alt="" class="img6"></div><div class="box7"><img src="img/img1.png" alt="" class="img7"> <img src="img/img2.png" alt="" class="img7_after"></div><div class="box8"><img src="img/img1.png" alt="" class="img8"><div class="mask"><div class="caption">あいうえお</div></div></div></div><div class="txt__ani"><div class="tag__title">ホバーエフェクト</div><br><div class="text1">ホバーエフェクト1</div><div class="text2">ホバーエフェクト2</div><div class="text3">ホバーエフェクト3</div><div class="text4">ホバーエフェクト4</div><div class="text5">ホバーエフェクト5</div><div class="text6">ホバーエフェクト6</div><div class="text7">ホバーエフェクト7</div><div class="text8">ホバーエフェクト8</div></div></main><footer><div class="logo"><img src="img/logo/logo.svg" class="logo__img" alt="logo" width="40px" height="37px"><p class="logo__title">Frontcp</p><p class="logo__tagline">Background Generator</p></div><p class="footer__txt">Background Generator was created by Yessneo and toshi14f.<br><span class="footer__highlight--white">Want more like this?</span> Check out <span class="footer__highlight--red">HOVER</span> and <span class="footer__highlight--red">NAVIGATION</span></p><small>Copyright &copy; 2020 Yessneo</small></footer><script type="text/javascript" src="scripts/clipboard.min.js"></script><script type="text/javascript" src="scripts/index.js"></script><script type="text/javascript" src="scripts/ani.js"></script></body></html>
+<!DOCTYPE html><html><head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#"><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="ie=edge"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1"><meta name="format-detection" content="telephone=no"><meta name="keywords" content="ecc,ECC,ecc comp.,..."><meta name="description" content="ここに説明文を設定"><title>Color Generator</title><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@twitteraccount"><meta property="og:site_name" content="サイト名"><meta property="og:title" content="サイトタイトル"><meta property="og:description" content="サイト説明文"><meta property="og:url" content="https://www.hogehoge.com"><meta property="og:image" content="https://www.hogehoge.com./hoge.jpg"><meta property="og:image:type" content="image/jpeg"><meta property="og:image:width" content="600"><meta property="og:image:height" content="400"><meta property="og:type" content="website"><link rel="stylesheet" type="text/css" href="styles/main.css"></head><body><header><div class="copied"><p>The code was copied to your clipboard</p></div><div class="logo"><img src="img/logo/logo.svg" class="logo__img" alt="logo" width="40px" height="37px"><p class="logo__title">Frontcp</p><p class="logo__tagline">Background Generator</p></div><nav class="header__menu menu"><button class="menu__button" type="button" aria-expanded="false" aria-controls="menu__list"><svg class="menu__icon" aria-hidden="true" width="32" height="32"><use class="menu__icon-menu" href="img/sprite.svg#menu"></use><use class="menu__icon-cross" href="img/sprite.svg#cross"></use></svg></button><ul class="menu__list" id="menu__list"><li class="menu__item"><a href="index.html" class="menu__link menu__link--current">Background</a></li><li class="menu__item"><a href="ani.html" class="menu__link menu__link--inactive">Navigation</a></li><li class="menu__item"><a class="menu__link menu__link--inactive">Navigation</a></li></ul></nav></header><main class="ani__main"><section class="buttons__section"><h2 class="tag__title">Buttons</h2><div class="section__container"><div class="button"><div class="overlay"><div class="tab__container"><div class="tab"><button class="tablinks" onclick="openCity(event, 'London')">HTML</button> <button class="tablinks" onclick="openCity(event, 'Paris')">CSS</button> <button class="close-btn">close</button></div><div id="London" class="tabcontent"><pre class="prettyprint lang-html" id="b1--html">
+&lt;button class="b1"&gt;HOVER ME&lt;/button&gt;
+                            </pre><button class="btn copy--btn" data-clipboard-action="copy" data-clipboard-target="#b1--html">COPY</button></div><div id="Paris" class="tabcontent"><pre class="prettyprint lang-css" id="b1--css">
+.b1 {
+  background: #de314f;
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 300;
+  border-radius: 6px;
+  border: none;
+  letter-spacing: 4px;
+  width: 237px;
+  height: 59px;
+  cursor: pointer
+  position: relative;
+  z-index: 1;
+  overflow: hidden
+}
+.b1::before {
+  content: '';
+  display: block;
+  position: absolute;
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #242836;
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%);
+  z-index: -1
+}
+.b1:hover {
+  color: #fff;
+  border: 1px solid #de314f
+}
+.b1:hover::before {
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0)
+}
+                            </pre><button class="btn copy--btn" data-clipboard-action="copy" data-clipboard-target="#b1--css">COPY</button></div></div></div><button class="buttons b1 tab__btn--open">HOVER ME</button></div><div class="button"><div class="overlay"><div class="tab__container"><div class="tab"><button class="tablinks" onclick="openCity(event, 'tab__b2--html')">HTML</button> <button class="tablinks" onclick="openCity(event, 'tab__b2--css')">CSS</button> <button class="close-btn">close</button></div><div id="tab__b2--html" class="tabcontent"><pre class="prettyprint lang-html" id="b2--html">
+&lt;button class="b2"&gt; &lt;span&gt;HOVER ME&lt;/span&gt;&lt;/button&gt;
+                        </pre><button class="btn copy--btn" data-clipboard-action="copy" data-clipboard-target="#b2--html">COPY</button></div><div id="tab__b2--css" class="tabcontent"><pre class="prettyprint lang-css" id="b2--css">
+.b2 {
+  position: relative;
+  width: 237px;
+  height: 59px;
+  background: #de314f;
+  z-index: 1
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 300;
+  border-radius: 6px;
+  border: none;
+  letter-spacing: 4px;
+  cursor: pointer
+  overflow: hidden
+}
+.b2::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  opacity: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border: 3px solid #fff;
+  border-radius: 4px;
+  -webkit-transition: all .6s ease;
+  -o-transition: all .6s ease;
+  transition: all .6s ease;
+  z-index: 0
+}
+.b2:hover::before {
+  width: 100%;
+  height: 100%;
+  opacity: 1
+}
+                        </pre><button class="btn copy--btn" data-clipboard-action="copy" data-clipboard-target="#b2--css">COPY</button></div></div></div><button class="buttons b2 tab__btn--open"><span>HOVER ME</span></button></div><div class="button"><div class="overlay"><div class="tab__container"><div class="tab"><button class="tablinks" onclick="openCity(event, 'tab__b3--html')">HTML</button> <button class="tablinks" onclick="openCity(event, 'tab__b3--css')">CSS</button> <button class="close-btn">close</button></div><div id="tab__b3--html" class="tabcontent"><pre class="prettyprint lang-html" id="b3--html">
+&lt;button class="b3 buttons"&gt;HOVER ME&lt;/button&gt;
+                        </pre><button class="btn copy--btn" data-clipboard-action="copy" data-clipboard-target="#b3--html">COPY</button></div><div id="tab__b3--css" class="tabcontent"><pre class="prettyprint lang-css" id="b3--css">
+.buttons {
+  background: #de314f;
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 300;
+  border-radius: 6px;
+  border: none;
+  letter-spacing: 4px;
+  width: 237px;
+  height: 59px;
+  cursor: pointer
+}
+.b3 {
+  position: relative;
+  width: 237px;
+  height: 59px;
+  background: #de314f;
+  z-index: 1
+}
+.b3::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  border: #de314f solid 1px;
+  width: 0;
+  height: 100%;
+  -webkit-transition: all .6s ease;
+  -o-transition: all .6s ease;
+  transition: all .6s ease;
+  background: #242836;
+  z-index: -1
+}
+.b3:hover::after {
+  width: 1
+                        </pre><button class="btn copy--btn" data-clipboard-action="copy" data-clipboard-target="#b3--css">COPY</button></div></div></div><button class="buttons b3 tab__btn--open">HOVER ME</button></div><div class="button"><div class="overlay"><div class="tab__container"><div class="tab"><button class="tablinks" onclick="openCity(event, 'tab__b4--html')">HTML</button> <button class="tablinks" onclick="openCity(event, 'tab__b4--css')">CSS</button> <button class="close-btn">close</button></div><div id="tab__b4--html" class="tabcontent"><pre class="prettyprint lang-html" id="b4--html">
+&lt;button class="b4 buttons"&gt;HOVER ME&lt;/button&gt;
+                        </pre><button class="btn copy--btn" data-clipboard-action="copy" data-clipboard-target="#b4--html">COPY</button></div><div id="tab__b4--css" class="tabcontent"><pre class="prettyprint lang-css" id="b4--css">
+.buttons {
+  background: #de314f;
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 300;
+  border-radius: 6px;
+  border: none;
+  letter-spacing: 4px;
+  width: 237px;
+  height: 59px;
+  cursor: pointer
+}
+.b4 {
+    position: relative;
+    width: 237px;
+    height: 59px;
+    z-index: 10;
+    background: #242836
+  }
+  .b4::after {
+    content: 'HOVER ME';
+    background: #de314f;
+    -webkit-transition: all .6s ease;
+    -o-transition: all .6s ease;
+    transition: all .6s ease;
+    -webkit-transform-origin: top;
+    -ms-transform-origin: top;
+    transform-origin: top;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    line-height: 59px;
+    border: #de314f 1px solid
+  }
+  .b4:hover {
+    border: #de314f 1px solid
+  }
+  .b4:hover::after {
+    -webkit-transform: rotateX(90deg);
+    transform: rotateX(90deg)
+  }
+
+                        </pre><button class="btn copy--btn" data-clipboard-action="copy" data-clipboard-target="#b4--css">COPY</button></div></div></div><button class="buttons b4 tab__btn--open">HELLO!</button></div></div></section><section class="text__section"><h2 class="tag__title">Texts</h2><div class="section__container"><div class="section__text"><div class="overlay"><div class="tab__container"><div class="tab"><button class="tablinks" onclick="openCity(event, 'tab__text1--html')">HTML</button> <button class="tablinks" onclick="openCity(event, 'tab__text1--css')">CSS</button> <button class="close-btn">close</button></div><div id="tab__text1--html" class="tabcontent"><pre class="prettyprint lang-html" id="text1--html">
+&lt;p class="text__base text1"&gt;HOVER ME&lt;/p&gt;
+                    </pre><button class="btn copy--btn" data-clipboard-action="copy" data-clipboard-target="#text1--html">COPY</button></div><div id="tab__text1--css" class="tabcontent"><pre class="prettyprint lang-css" id="text1--css">
+.text__base {
+    font-size: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+.text1{
+    transition: 0.5s;
+    position: relative;
+    display: inline-block;
+    &::after{
+        transition: 0.5s;
+        position: absolute;
+        bottom: -5px;
+        left: -5px;
+        content: '';
+        width: 3px;
+        height: 100%;
+        border-bottom: 3px solid #DE314F;
+        border-right: 3px solid #DE314F;
+        opacity: 0;
+    }
+    &:hover{
+        &::after{
+            width: 110%;
+            height: 100%;
+            opacity: 1;
+        }
+    }
+}
+
+                    </pre><button class="btn copy--btn" data-clipboard-action="copy" data-clipboard-target="#text1--css">COPY</button></div></div></div><p class="tab__btn--open text1 text__base">HOVER ME</p></div><div class="section__text"><div class="overlay"><div class="tab__container"><div class="tab"><button class="tablinks" onclick="openCity(event, 'tab__text2--html')">HTML</button> <button class="tablinks" onclick="openCity(event, 'tab__text2--css')">CSS</button> <button class="close-btn">close</button></div><div id="tab__text2--html" class="tabcontent"><pre class="prettyprint lang-html" id="text2--html">
+&lt;p class="text__base text1"&gt;HOVER ME&lt;/p&gt;
+                    </pre><button class="btn copy--btn" data-clipboard-action="copy" data-clipboard-target="#text2--html">COPY</button></div><div id="tab__text2--css" class="tabcontent"><pre class="prettyprint lang-css" id="text2--css">
+.text__base {
+    font-size: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+.text2:hover {
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+    -webkit-mask-size: 200%;
+    animation: shine 2s infinite;
+  }
+  
+  @-webkit-keyframes shine {
+    from {
+      -webkit-mask-position: 150%;
+    }
+    
+    to {
+      -webkit-mask-position: -50%;
+    }
+  }
+
+                    </pre><button class="btn copy--btn" data-clipboard-action="copy" data-clipboard-target="#text2--css">COPY</button></div></div></div><p class="tab__btn--open text2 text__base">HOVER ME</p></div><div class="section__text"><div class="overlay"><div class="tab__container"><div class="tab"><button class="tablinks" onclick="openCity(event, 'tab__text3--html')">HTML</button> <button class="tablinks" onclick="openCity(event, 'tab__text3--css')">CSS</button> <button class="close-btn">close</button></div><div id="tab__text3--html" class="tabcontent"><pre class="prettyprint lang-html" id="text3--html">
+&lt;p class="text__base text1"&gt;HOVER ME&lt;/p&gt;
+                    </pre><button class="btn copy--btn" data-clipboard-action="copy" data-clipboard-target="#text3--html">COPY</button></div><div id="tab__text3--css" class="tabcontent"><pre class="prettyprint lang-css" id="text3--css">
+.text__base {
+    font-size: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+.text3 {
+    transition: all 0.3s ease 0s;
+    &:hover {
+        color: white;
+        background: #DE314F;
+    }
+}
+
+                    </pre><button class="btn copy--btn" data-clipboard-action="copy" data-clipboard-target="#text3--css">COPY</button></div></div></div><p class="tab__btn--open text3 text__base">HOVER ME</p></div><div class="section__text"><div class="overlay"><div class="tab__container"><div class="tab"><button class="tablinks" onclick="openCity(event, 'tab__text4--html')">HTML</button> <button class="tablinks" onclick="openCity(event, 'tab__text4--css')">CSS</button> <button class="close-btn">close</button></div><div id="tab__text4--html" class="tabcontent"><pre class="prettyprint lang-html" id="text4--html">
+&lt;p class="text__base text4"&gt;HOVER ME&lt;/p&gt;
+                    </pre><button class="btn copy--btn" data-clipboard-action="copy" data-clipboard-target="#text4--html">COPY</button></div><div id="tab__text4--css" class="tabcontent"><pre class="prettyprint lang-css" id="text4--css">
+.text__base {
+    font-size: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.text4 {
+    transition:all 0.3s ease 0s;
+    transform: scale(1);
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+
+                    </pre><button class="btn copy--btn" data-clipboard-action="copy" data-clipboard-target="#text4--css">COPY</button></div></div></div><p class="tab__btn--open text4 text__base">HOVER ME</p></div><div class="section__text"><div class="overlay"><div class="tab__container"><div class="tab"><button class="tablinks" onclick="openCity(event, 'tab__text5--html')">HTML</button> <button class="tablinks" onclick="openCity(event, 'tab__text5--css')">CSS</button> <button class="close-btn">close</button></div><div id="tab__text5--html" class="tabcontent"><pre class="prettyprint lang-html" id="text5--html">
+&lt;p class="text__base text4"&gt;HOVER ME&lt;/p&gt;
+                    </pre><button class="btn copy--btn" data-clipboard-action="copy" data-clipboard-target="#text5--html">COPY</button></div><div id="tab__text5--css" class="tabcontent"><pre class="prettyprint lang-css" id="text5--css">
+.text__base {
+    font-size: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.text5{
+    transition: 0.3s;
+    &:hover{
+        color: #ff0000;
+    }
+}
+
+                    </pre><button class="btn copy--btn" data-clipboard-action="copy" data-clipboard-target="#text5--css">COPY</button></div></div></div><p class="tab__btn--open text5 text__base">HOVER ME</p></div><div class="section__text"><div class="overlay"><div class="tab__container"><div class="tab"><button class="tablinks" onclick="openCity(event, 'tab__text6--html')">HTML</button> <button class="tablinks" onclick="openCity(event, 'tab__text6--css')">CSS</button> <button class="close-btn">close</button></div><div id="tab__text6--html" class="tabcontent"><pre class="prettyprint lang-html" id="text6--html">
+        &lt;p class="text__base text4"&gt;HOVER ME&lt;/p&gt;
+                            </pre><button class="btn copy--btn" data-clipboard-action="copy" data-clipboard-target="#text6--html">COPY</button></div><div id="tab__text6--css" class="tabcontent"><pre class="prettyprint lang-css" id="text6--css">
+.text__base {
+    font-size: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+        
+.text6 {
+    position: relative;
+    display: block;
+    transition: 0.5s;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: #3498db;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.5s;
+    }
+
+    &:hover {
+      color: #95a5a6;
+    }
+
+    &:hover::after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+  }
+        
+                            </pre><button class="btn copy--btn" data-clipboard-action="copy" data-clipboard-target="#text6--css">COPY</button></div></div></div><p class="tab__btn--open text6 text__base">HOVER ME</p></div></div></section><section class="text__section"><h2 class="tag__title">Images</h2><div class="section__container"><div class="box1"><img src="img/nike.webp" alt="" class="img1"></div><div class="box2"><img src="img/nike.webp" alt="" class="img2"></div><div class="box3"><img src="img/nike.webp" alt="" class="img3"></div><div class="box4"><img src="img/nike.webp" alt="" class="img4"></div><div class="box5"><img src="img/nike.webp" alt="" class="img5"><div class="mask"><div class="caption">I AM HOVERED</div></div></div><div class="box6"><img src="img/nike.webp" alt="" class="img6"></div><div class="box7"><img src="img/nike.webp" alt="" class="img7"> <img src="img/rose.jpg" alt="" class="img7_after"></div><div class="box8"><img src="img/nike.webp" alt="" class="img8"><div class="mask"><div class="caption">HELLO!</div></div></div></div>></section><section class="loader__section"><h2 class="tag__title">Loaders</h2><div class="section__container"><div class="loader"><div class="ball"><div></div><div></div><div></div></div></div><div class="loader"><div class="rotation"><div></div><div></div><div></div></div></div><div class="loader"><div class="square"><div></div><div></div><div></div></div></div><div class="loader"><div class="bounce"><div></div><div></div><div></div></div></div><div class="loader"><div class="nine"><div class="nine_one"><div></div><div></div><div></div></div><div class="nine_two"><div></div><div></div><div></div></div><div class="nine_tree"><div></div><div></div><div></div></div></div></div><div class="loader"><div class="house"><div class="roof"></div><div class="wall"></div><div class="chimney"></div><div class="smoke"><div></div><div></div></div></div></div><div class="loader"><div class="clock"><div class="circle"></div><div class="hand"><div class="big"></div><div class="small"></div></div><div class="center"></div></div></div><div class="loader"><div class="fish"><div class="body"></div><div class="tail"></div><div class="back_fin"></div><div class="bottom_fin"></div><div class="bubble"><div class="big"></div><div class="small"></div></div></div></div><div class="loader"><div class="cube"><div class="cube_one"><div></div><div></div><div></div></div><div class="cube_two"><div></div><div></div><div></div></div><div class="cube_tree"><div></div><div></div><div></div></div></div></div><div class="loader"><div class="circle"><div></div><div></div><div></div></div></div><div class="loader"><div class="foot"><div class="foot_right"><div class="foot_right_front"></div><div class="foot_right_back"></div></div><div class="foot_left"><div class="foot_left_front"></div><div class="foot_left_back"></div></div><div class="foot_left"></div></div></div><div class="loader"><div class="box"><div class="box_one"><div></div><div></div></div><div class="box_two"><div></div><div></div></div></div></div></div>></section></main><footer><div class="logo"><img src="img/logo/logo.svg" class="logo__img" alt="logo" width="40px" height="37px"><p class="logo__title">Frontcp</p><p class="logo__tagline">Background Generator</p></div><p class="footer__txt">Background Generator was created by Yessneo and toshi14f.<br><span class="footer__highlight--white">Want more like this?</span> Check out <a href="ani.html"><span class="footer__highlight--red">HOVER</span></a> and <a href="index.html"><span class="footer__highlight--red">BACKGROUND</span></a></p><small>Copyright &copy; 2020 Yessneo</small></footer><script type="text/javascript" src="scripts/clipboard.min.js"></script><script type="text/javascript" src="scripts/index.js"></script><script type="text/javascript" src="scripts/ani.js"></script><script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?lang=css&amp;skin=sunburst"></script></body></html>
